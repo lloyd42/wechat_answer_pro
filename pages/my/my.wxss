@@ -1,0 +1,108 @@
+page {
+  background-color: whitesmoke;
+}
+.my .user_info_warp {
+  height: 36vh;
+  width: 100%;
+  background-color: red;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.my .user_info_warp .user_bg {
+  height: 36vh;
+  width: 100%;
+  filter: blur(20rpx);
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.my .user_info_warp .no_login {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.my .user_info_warp .no_login button {
+  width: 160rpx;
+}
+.my .user_info_warp .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+  z-index: 66;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my .user_info_warp .user_info .avatar {
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+.my .user_info_warp .user_info .username {
+  color: black;
+}
+.my .user_main_warp {
+  position: relative;
+}
+.my .user_main_warp .user_main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50rpx;
+}
+.my .user_main_warp .user_main .row_item {
+  height: 100rpx;
+  width: auto;
+  background-color: #fff;
+  margin-bottom: 15rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.my .user_main_warp .user_main .row_item .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my .user_main_warp .user_main .row_item .item .num {
+  color: gray;
+}
+.my .user_main_warp .user_main .column_item {
+  height: 600rpx;
+  width: auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.my .user_main_warp .user_main .column_item .item {
+  height: 100rpx;
+  border-bottom: 1px solid whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my .user_main_warp .user_main .column_item .item .left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+.my .user_main_warp .user_main .column_item .item .left .iconfont {
+  font-size: 40rpx;
+  margin-right: 10rpx;
+}
+.my .user_main_warp .user_main .column_item .item .right {
+  display: flex;
+  align-items: center;
+  margin-right: 15rpx;
+}

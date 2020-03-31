@@ -1,0 +1,36 @@
+<view class="warpper">
+    <view class="talk">
+        <scroll-view scroll-y style="height:625px" class="scroll" scroll-into-view="{{num}}">
+            <view class="list_warpper">
+                <view class="list" wx:for="{{Mess}}" wx:key="index" id="{{'no'+(index+1)}}">
+                    <view class="left" wx:if="{{item.who==talker}}">
+                        <view class="avatar">
+                            <image src="{{avatar}}"></image>
+                        </view>
+                        <view class="tri"></view>
+                        <view class="mess">
+                            <text>{{item.content}}</text>
+                        </view>
+                    </view>
+                    <view class="right" wx:if="{{item.who=='user'}}">
+                        <view class="mess">
+                            <text>{{item.content}}</text>
+                        </view>
+                        <view class="tri"></view>
+                        <view class="avatar">
+                            <image src="{{uAvatar}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="input_warpper">
+        <view class="input">
+            <input type="text" placeholder="说句话吧~" placeholder-class="input_placeholder" bindinput="handleInput" value="{{myMess}}"></input>
+            <button size="mini" type="primary" bind:tap="sendMess" data-mess="{{myMess}}">
+                发送
+            </button>
+        </view>
+    </view>
+</view>

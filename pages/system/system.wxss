@@ -1,0 +1,82 @@
+page {
+  height: auto;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.system {
+  height: 100%;
+  padding-top: 165rpx;
+}
+.system .picker {
+  height: 75rpx;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 90rpx;
+}
+.system .picker .picker_main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  height: 74rpx;
+  position: relative;
+  width: 100%;
+}
+.system .picker .picker_main view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66rpx;
+  border-right: 1rpx solid #fff;
+  position: absolute;
+  top: 3rpx;
+  left: 0;
+  width: 100%;
+}
+.system .picker .picker_main view view span {
+  margin-left: 10rpx;
+}
+.system .picker .picker_sub {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  height: 74rpx;
+  position: relative;
+  width: 100%;
+}
+.system .picker .picker_sub view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.system .picker .picker_sub view view span {
+  margin-left: 10rpx;
+}
+.system .system_content {
+  margin: 10rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.system .system_content text.floor_item_title {
+  font-size: 36rpx;
+}
+.system .system_content view.floor_item_content {
+  font-size: 30rpx;
+  color: gray;
+}
+.system .system_content view.floor_item_content text {
+  margin-right: 15rpx;
+  margin-left: 5rpx;
+  color: black;
+}

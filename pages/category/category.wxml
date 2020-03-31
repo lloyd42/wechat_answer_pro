@@ -1,0 +1,32 @@
+<view class="category">
+    <!-- <Search></Search> -->
+    <view class="category_flex">
+        <!-- 左菜单 -->
+        <scroll-view class="left_view" scroll-y>
+            <view class="left_view_item {{index===cateCurrentIndex?'active':''}}" wx:for="{{cateList}}" wx:key="id" bind:tap="cateSelected" data-index="{{index}}">
+                {{item.name}}
+            </view>
+        </scroll-view>
+        <!-- 右内容 -->
+        <scroll-view class="right_view" scroll-y scroll-top="{{scrollTop}}">
+            <view class="right_view_item" wx:for="{{cateDataList}}" wx:key="id">
+                <view class="item_left" bind:tap="prevImage" data-src="{{item.envelopePic}}">
+                    <image src="{{item.envelopePic}}" mode="aspectFill"></image>
+                </view>
+                <view class="item_right" bind:tap="webTap" data-src="{{item.link}}" data-title="{{item.title}}">
+                    <view class="view1">
+                        <text class="item_title" decode="{{true}}">{{item.title}}</text>
+                    </view>
+                    <view class="view2">
+                        <text class="item_desc" decode="{{true}}">{{item.desc}}</text>
+                    </view>
+                    <view class="view3">
+                        <text class="item_mess" decode="{{true}}">
+                            {{item.niceDate}}   {{item.author}}
+                        </text>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

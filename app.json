@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/answer/answer",
+    "pages/question/question",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/system/system",
+    "pages/share/share",
+    "pages/gzh/gzh",
+    "pages/web_view/web_view",
+    "pages/answer_detail_select/answer_detail_select",
+    "pages/answer_detail_boolean/answer_detail_boolean",
+    "pages/talk/talk"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "学习答题",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "学习",
+        "iconPath": "icons/study.png",
+        "selectedIconPath": "icons/study-active.png"
+      },
+      {
+        "pagePath": "pages/answer/answer",
+        "text": "考试",
+        "iconPath": "icons/test.png",
+        "selectedIconPath": "icons/test-active.png"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "答疑",
+        "iconPath": "icons/help.png",
+        "selectedIconPath": "icons/help-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

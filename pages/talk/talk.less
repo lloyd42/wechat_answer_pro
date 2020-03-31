@@ -1,0 +1,128 @@
+page {
+    background-color: whitesmoke;
+}
+
+.warpper {
+    position: relative;
+
+    .talk {
+
+        .list_warpper {
+
+            .list {
+                .left {
+                    margin-top: 15rpx;
+                    display: flex;
+                    flex-direction: row;
+
+                    .avatar {
+                        image {
+                            margin-left: 15rpx;
+                            height: 90rpx;
+                            width: 90rpx;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .tri {
+                        width: 0px;
+                        height: 0px;
+                        border: 10rpx solid transparent;
+                        border-right-color: #2ECC40;
+                        margin-top: 20rpx;
+                    }
+
+                    .mess {
+                        height: auto;
+                        width: auto;
+                        padding: 15rpx;
+                        margin-right: 125rpx;
+                        border-radius: 10rpx;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        background-color: #2ECC40;
+
+                        text {
+                            font-size: 30rpx;
+                        }
+                    }
+                }
+
+                .right {
+                    margin-top: 15rpx;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    .avatar {
+                        image {
+                            margin-right: 15rpx;
+                            height: 90rpx;
+                            width: 90rpx;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .tri {
+                        width: 0px;
+                        height: 0px;
+                        border: 10rpx solid transparent;
+                        border-left-color: #2ECC40;
+                        margin-top: 20rpx;
+                    }
+
+                    .mess {
+                        height: auto;
+                        margin-left: 125rpx;
+                        border-radius: 10rpx;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        background-color: #2ECC40;
+
+                        text {
+                            font-size: 30rpx;
+                            padding: 15rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .input_warpper {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 80rpx;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+
+        .input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 60rpx;
+
+            input {
+                flex: 1;
+                border-radius: 30rpx;
+                background-color: whitesmoke;
+                margin: 0 15rpx;
+                padding-left: 20rpx;
+                height: 100%;
+            }
+
+            button {
+                height: auto;
+                width: 120rpx;
+                margin-right: 15rpx;
+            }
+        }
+    }
+}

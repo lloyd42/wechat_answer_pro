@@ -1,0 +1,50 @@
+.question .talk {
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+.question .talk image {
+  height: 95rpx;
+  width: 95rpx;
+  border-radius: 50%;
+  margin-left: 15rpx;
+}
+.question .talk .text {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  margin: 0 15rpx;
+  flex: 1;
+}
+.question .talk .text .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.question .talk .text .left .name {
+  font-size: 35rpx;
+  height: 50%;
+  margin-bottom: 10rpx;
+}
+.question .talk .text .left .mess {
+  color: gray;
+  font-size: 30rpx;
+  height: 50%;
+}
+.question .talk .text .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+}
+.question .talk .text .right .day {
+  margin-bottom: 10rpx;
+}
+.question .talk .text .right .time {
+  display: flex;
+  justify-content: flex-end;
+}

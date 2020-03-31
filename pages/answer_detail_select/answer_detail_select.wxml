@@ -1,0 +1,25 @@
+<view class="select_detail">
+    <view class="detail_container">
+        <view class="answer_item" wx:for="{{answerList}}" wx:key="id">
+            <view class="question">{{index+1}}. {{item.question}}</view>
+            <radio-group bindchange="radioChange" data-answer="{{item.answer}}" data-index="{{index}}">
+                <radio value="A">
+                    <text>A {{item.optionA}}</text>
+                </radio>
+                <radio value="B">
+                    <text>B {{item.optionB}}</text>
+                </radio>
+                <radio value="C">
+                    <text>C {{item.optionC}}</text>
+                </radio>
+                <radio value="D">
+                    <text>D {{item.optionD}}</text>
+                </radio>
+            </radio-group>
+        </view>
+        <view class="boolean" wx:if="{{isShow}}">
+            <text wx:for="{{questionBoolean}}" wx:key="id">({{index+1}}). {{item}}</text>
+        </view>
+    </view>
+    <button type="primary" bind:tap="tapSubmit">提交</button>
+</view>

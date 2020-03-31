@@ -1,0 +1,62 @@
+.question {
+    .talk {
+        height: 120rpx;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid whitesmoke;
+
+        image {
+            height: 95rpx;
+            width: 95rpx;
+            border-radius: 50%;
+            margin-left: 15rpx;
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-direction: row;
+            margin: 0 15rpx;
+            flex: 1;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .name {
+                    font-size: 35rpx;
+                    height: 50%;
+                    margin-bottom: 10rpx;
+                }
+
+                .mess {
+                    color: gray;
+                    font-size: 30rpx;
+                    height: 50%;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: grey;
+
+
+                .day {
+                    margin-bottom: 10rpx;
+                }
+
+                .time {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+
+        }
+    }
+}

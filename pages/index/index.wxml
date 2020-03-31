@@ -1,0 +1,60 @@
+<view class="container">
+  <!-- 搜索 -->
+  <!-- <Search /> -->
+  <!-- 轮播图 -->
+  <view class="swiper">
+    <!-- 1 swiper 默认宽高 100% 150px
+  2 image  默认宽高 320px 240px -->
+    <swiper autoplay circular indicator-dots>
+      <swiper-item wx:for="{{swiperList}}" wx:key="id" bind:tap="webTap" data-src="{{item.url}}" data-title="{{item.title}}">
+        <view>
+          <image src="{{item.imagePath}}" mode="widthFix"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="nav">
+    <view wx:for="{{navList}}" wx:key="id" class="navs" data-index="{{index}}" bind:tap="navSelected">
+      <view class="nav_item">
+        <view class="iconfont {{item.icon}}"></view>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 楼层 -->
+  <view class="floor">
+    <view class="top_floor">
+      <view class="floor_title">
+        <span>置顶文章</span>
+      </view>
+      <view class="floor_item" wx:for="{{topFloorList}}" wx:key="id" bind:tap="webTap" data-src="{{item.link}}" data-title="{{item.title}}">
+        <text decode="true" class="floor_item_title">{{item.title}}</text>
+        <view class="'floor_item_content">
+          作者:
+          <text>{{item.author}}</text>
+          分类:
+          <text>{{item.chapterName}}</text>
+          时间:
+          <text>{{item.niceDate}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="new_floor">
+      <view class="floor_title">
+        <span>最新文章</span>
+      </view>
+      <view class="floor_item" wx:for="{{newFloorList}}" wx:key="id" bind:tap="webTap" data-src="{{item.link}}" data-title="{{item.title}}">
+        <text decode="true" class="floor_item_title">{{item.title}}</text>
+        <view class="'floor_item_content">
+          分享者:
+          <text>{{item.shareUser}}</text>
+          分类:
+          <text>{{item.chapterName}}</text>
+          时间:
+          <text>{{item.niceDate}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

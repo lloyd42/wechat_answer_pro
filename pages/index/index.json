@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Search": "../../components/Search/Search"
+  },
+  "navigationBarTitleText": "学习",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,21 @@
+page {
+  background-color: whitesmoke;
+}
+.share .share_list {
+  margin: 10rpx;
+  margin-bottom: 5rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.share .share_list text.floor_item_title {
+  font-size: 36rpx;
+}
+.share .share_list view.floor_item_content {
+  font-size: 30rpx;
+  color: gray;
+}
+.share .share_list view.floor_item_content text {
+  margin-right: 15rpx;
+  margin-left: 5rpx;
+  color: black;
+}

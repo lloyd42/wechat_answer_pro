@@ -1,0 +1,48 @@
+page {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.boolean_detail .detail_container .answer_item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 10rpx;
+  padding: 15rpx;
+  border-radius: 10rpx;
+}
+.boolean_detail .detail_container .answer_item radio-group {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.boolean_detail .detail_container .answer_item radio-group radio {
+  margin: 10rpx 10rpx 10rpx 0;
+}
+.boolean_detail .detail_container .answer_item radio-group radio .wx-radio-input {
+  width: 35rpx;
+  height: 35rpx;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.boolean_detail .detail_container .answer_item radio-group radio text {
+  width: 150rpx;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 26rpx;
+}
+.boolean_detail .detail_container .boolean {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: red;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 10rpx;
+  padding: 15rpx;
+}
+.boolean_detail button {
+  width: auto;
+  margin: 20rpx 10rpx;
+}

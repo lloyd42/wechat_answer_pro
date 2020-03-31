@@ -1,0 +1,8 @@
+<view class="answer">
+    <view class="card" wx:for="{{answerList}}" wx:key="id" bind:tap="answerTap" data-gid="{{item.gid}}" data-type="{{item.type}}">
+        <view class="flex_img">
+            <image src="../../icons/renwu-{{index}}.svg" mode="aspectFit"></image>
+        </view>
+        <view class="flex_text">{{item.name}}</view>
+    </view>
+</view>

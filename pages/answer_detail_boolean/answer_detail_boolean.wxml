@@ -1,0 +1,19 @@
+<view class="boolean_detail">
+    <view class="detail_container">
+        <view class="answer_item" wx:for="{{answerList}}" wx:key="id">
+            <view class="question">{{index+1}}. {{item.question}}</view>
+            <radio-group bindchange="radioChange" data-answer="{{item.answer}}" data-index="{{index}}">
+                <radio value="T">
+                    <text>对</text>
+                </radio>
+                <radio value="F">
+                    <text>错</text>
+                </radio>
+            </radio-group>
+        </view>
+        <view class="boolean" wx:if="{{isShow}}">
+            <text wx:for="{{questionBoolean}}" wx:key="id">({{index+1}}). {{item}}</text>
+        </view>
+    </view>
+    <button type="primary" bind:tap="tapSubmit">提交</button>
+</view>

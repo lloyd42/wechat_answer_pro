@@ -1,0 +1,88 @@
+.container {
+  background-color: whitesmoke;
+}
+.container .swiper swiper {
+  width: 750rpx;
+  height: 417rpx;
+}
+.container .swiper swiper image {
+  width: 100%;
+}
+.container .nav {
+  margin: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.container .nav view.navs {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .nav view.navs .nav_item view {
+  font-size: 40px;
+  color: red;
+}
+.container .nav view.navs .nav_item text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .floor .top_floor .floor_title {
+  background-color: #fff;
+  margin: 0 10rpx;
+  padding: 10rpx;
+  border-bottom: 5rpx solid lightblue;
+}
+.container .floor .top_floor .floor_title span {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.container .floor .top_floor .floor_item {
+  margin: 0 10rpx;
+  margin-bottom: 5rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.container .floor .top_floor .floor_item text.floor_item_title {
+  font-size: 36rpx;
+}
+.container .floor .top_floor .floor_item view.floor_item_content {
+  font-size: 30rpx;
+  color: gray;
+}
+.container .floor .top_floor .floor_item view.floor_item_content text {
+  margin-right: 15rpx;
+  margin-left: 5rpx;
+  color: black;
+}
+.container .floor .new_floor .floor_title {
+  background-color: #fff;
+  margin: 0 10rpx;
+  padding: 10rpx;
+  border-bottom: 5rpx solid lightblue;
+}
+.container .floor .new_floor .floor_title span {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.container .floor .new_floor .floor_item {
+  margin: 0 10rpx;
+  margin-bottom: 5rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.container .floor .new_floor .floor_item text.floor_item_title {
+  font-size: 36rpx;
+}
+.container .floor .new_floor .floor_item view.floor_item_content {
+  font-size: 30rpx;
+  color: gray;
+}
+.container .floor .new_floor .floor_item view.floor_item_content text {
+  margin-right: 15rpx;
+  margin-left: 5rpx;
+  color: black;
+}

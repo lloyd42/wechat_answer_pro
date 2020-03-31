@@ -1,0 +1,21 @@
+<view class="gzh">
+    <!-- <Search></Search> -->
+    <view class="gzh_flex">
+        <!-- 左菜单 -->
+        <scroll-view class="left_view" scroll-y>
+            <view class="left_view_item {{index===gzhCurrentIndex?'active':''}}" wx:for="{{gzhList}}" wx:key="id" bind:tap="gzhSelected" data-index="{{index}}">
+                {{item.name}}
+            </view>
+        </scroll-view>
+        <!-- 右内容 -->
+        <scroll-view class="right_view" scroll-y scroll-top="{{scrollTop}}">
+            <view class="floor_item" wx:for="{{gzhDataList}}" wx:key="id" bind:tap="webTap" data-src="{{item.link}}" data-title="{{item.title}}">
+                <text decode="true" class="floor_item_title">{{item.title}}</text>
+                <view class="'floor_item_content">
+                    时间:
+                    <text>{{item.niceDate}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+<view class="my">
+    <view class="user_info_warp">
+        <image src="{{userInfo?userInfo.avatarUrl:''}}" class="user_bg"></image>
+        <view class="no_login">
+            <button wx:if="{{!userInfo}}" type="primary" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+                登录
+            </button>
+        </view>
+        <view class="user_info" wx:if="{{userInfo}}">
+            <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+            <text class="username">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class="user_main_warp">
+        <view class="user_main">
+            <view class="row_item">
+                <view class="item" wx:for="{{rowList}}" wx:key="id">
+                    <text class="num">{{item.num}}</text>
+                    <text class="name">{{item.name}}</text>
+                </view>
+            </view>
+            <view class="column_item">
+                <view wx:for="{{columnList}}" wx:key="id" class="item" bind:tap="columnTap" data-index="{{index}}">
+                    <view class="left">
+                        <view class="iconfont {{item.icon}}"></view>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="right iconfont icon-youjiantou_huaban"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

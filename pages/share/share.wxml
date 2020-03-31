@@ -1,0 +1,12 @@
+<view class="share">
+    <Search></Search>
+    <view class="share_list" wx:for="{{shareList}}" wx:key="id" bind:tap="webTap" data-src="{{item.link}}" data-title="{{item.title}}">
+        <text decode="true" class="floor_item_title">{{item.title}}</text>
+        <view class="'floor_item_content">
+            分享者:
+            <text>{{item.shareUser}}</text>
+            时间:
+            <text>{{item.niceDate}}</text>
+        </view>
+    </view>
+</view>

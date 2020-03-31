@@ -1,0 +1,60 @@
+page {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.select_detail {
+    .detail_container {
+        .answer_item {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            margin: 10rpx;
+            padding: 15rpx;
+            border-radius: 10rpx;
+
+            radio-group {
+                margin-top: 10rpx;
+                display: flex;
+                flex-direction: column;
+
+                radio {
+                    margin: 10rpx 10rpx 10rpx 0;
+
+                    .wx-radio-input {
+                        width: 35rpx;
+                        height: 35rpx;
+                        flex-grow: 0;
+                        flex-shrink: 0;
+                    }
+
+                    text {
+                        width: 150rpx;
+                        flex-grow: 0;
+                        flex-shrink: 0;
+                        font-size: 26rpx;
+                    }
+                }
+            }
+        }
+
+        .boolean {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: red;
+            background-color: #fff;
+            border-radius: 10rpx;
+            margin: 10rpx;
+            padding: 15rpx;
+
+        }
+    }
+
+    button {
+        width: auto;
+        margin: 20rpx 10rpx;
+    }
+}

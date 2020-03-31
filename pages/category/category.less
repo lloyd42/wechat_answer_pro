@@ -1,0 +1,132 @@
+page {
+    height: 100%;
+}
+
+.category {
+    height: 100%;
+
+    .category_flex {
+        display: flex;
+        height: 100%;
+
+        .left_view {
+            flex: 5;
+            background-color: whitesmoke;
+
+            .left_view_item {
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 27rpx;
+            }
+
+            .active {
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+                background-color: #fff;
+            }
+
+            .active::before {
+                content: "♥";
+                color: red;
+            }
+        }
+
+        .right_view {
+            flex: 15;
+            margin: 10rpx;
+            display: flex;
+
+            .right_view_item {
+                margin-bottom: 10rpx;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                height: 300rpx;
+                box-shadow: 0 1rpx 2rpx 0 rgba(0, 0, 0, .05);
+                border: 1rpx solid #eee;
+                padding: 10rpx;
+
+                .item_left {
+                    width: 169rpx;
+                    margin-right: 10rpx;
+
+                    image {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .item_right {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    //background-color: yellowgreen;
+
+                    .view1 {
+                        //flex: 1;
+                        //background-color: red;
+
+                        .item_title {
+                            color: #333;
+                            font-size: 30rpx;
+                            font-weight: bold;
+                            // 微信小程序 在垂直排列时情况下 文本溢出省略解决方案
+                            display: -webkit-box;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                            -moz-box-orient: vertical;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 1;
+
+                        }
+                    }
+
+
+                    .view2 {
+                        flex: 1;
+                        //background-color: sandybrown;
+                        margin-top: 10rpx;
+
+                        .item_desc {
+                            font-size: 26rpx;
+                            color: #767676;
+
+                            display: -webkit-box;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                            -moz-box-orient: vertical;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 5;
+
+                        }
+
+                    }
+
+                    .view3 {
+                        //flex: 1;
+                        //background-color: green;
+
+                        .item_mess {
+                            font-size: 22rpx;
+                            text-overflow: ellipsis;
+                            color: #767676;
+
+                            display: flex;
+                            align-items: center;
+                            flex-direction: row;
+                            margin-left: 10rpx;
+                        }
+                    }
+
+                }
+            }
+
+
+
+        }
+    }
+}

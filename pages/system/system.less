@@ -1,0 +1,98 @@
+page {
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.system {
+    height: 100%;
+    padding-top: 165rpx;
+
+    .picker {
+        height: 75rpx;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 90rpx;
+
+        .picker_main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--themeColor);
+            height: 74rpx;
+            position: relative;
+            width: 100%;
+
+            view {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 66rpx;
+                border-right: 1rpx solid #fff;
+                position: absolute;
+                top: 3rpx;
+                left: 0;
+                width: 100%;
+
+                view {
+                    span {
+                        margin-left: 10rpx;
+                    }
+                }
+            }
+        }
+
+        .picker_sub {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--themeColor);
+            height: 74rpx;
+            position: relative;
+            width: 100%;
+
+            view {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 74rpx;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+
+                view {
+                    span {
+                        margin-left: 10rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    .system_content {
+        margin: 10rpx;
+        padding: 10rpx;
+        background-color: #fff;
+
+        text.floor_item_title {
+            font-size: 36rpx;
+        }
+
+        view.floor_item_content {
+            font-size: 30rpx;
+            color: gray;
+
+            text {
+                margin-right: 15rpx;
+                margin-left: 5rpx;
+                color: black;
+            }
+        }
+    }
+}

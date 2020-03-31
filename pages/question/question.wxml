@@ -1,0 +1,15 @@
+<view class="question">
+    <view class="talk" wx:for="{{talkList}}" wx:key="id" bind:tap="talkTap" data-name="{{item.name}}" data-avatar="{{item.avatar}}">
+        <image src="{{item.avatar}}"></image>
+        <view class="text">
+            <view class="left">
+                <text class="name">{{item.name}}</text>
+                <text class="mess">{{"欢迎提问"}}</text>
+            </view>
+            <view class="right">
+                <text class="day">2020-1-14</text>
+                <text class="time">15:15</text>
+            </view>
+        </view>
+    </view>
+</view>

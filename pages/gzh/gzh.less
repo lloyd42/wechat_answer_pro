@@ -1,0 +1,64 @@
+page {
+    height: 100%;
+}
+
+.gzh {
+    height: 100%;
+
+    .gzh_flex {
+        display: flex;
+        height: 100%;
+
+        .left_view {
+            flex: 6;
+            background-color: whitesmoke;
+
+            .left_view_item {
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 27rpx;
+            }
+
+            .active {
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+                background-color: #fff;
+            }
+
+            .active::before {
+                content: "⭐";
+                color: red;
+            }
+        }
+
+        .right_view {
+            flex: 14;
+            display: flex;
+
+            .floor_item {
+                margin: 10rpx;
+                margin-bottom: 5rpx;
+                padding: 10rpx;
+                box-shadow: 0 1rpx 2rpx 0 rgba(0, 0, 0, .05);
+                border: 1rpx solid #eee;
+
+                text.floor_item_title {
+                    font-size: 36rpx;
+                }
+
+                view.floor_item_content {
+                    font-size: 30rpx;
+                    color: gray;
+
+                    text {
+                        margin-right: 15rpx;
+                        margin-left: 5rpx;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
